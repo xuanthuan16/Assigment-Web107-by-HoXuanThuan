@@ -1,0 +1,347 @@
+body {
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.header {
+    background-image: url(/images/banner.jpg);
+    background-color: rgba(0, 0, 0, .45);
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hearder-web {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1450px;
+    margin: auto
+}
+
+.phone-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-phone p,
+.contact-email p {
+    margin-right: 30px;
+    color: white;
+}
+
+.contact-phone p:hover,
+.contact-email p:hover,
+.menu a:hover {
+    color: #1ba0e2;
+}
+
+.menu a.active {
+    color: #1ba0e2;
+    border-bottom: 2px solid #22ff31;
+}
+
+.menu a.active:hover {
+    color: #27fa2e;
+}   
+
+.menu-n {
+    background-color: rgba(0, 0, 0, .2);
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Đảm bảo menu luôn hiển thị phía trên */
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.menu {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.banner-food img {
+    width: 100%;
+    height: 580px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.footer img {
+    padding-top: 20px;
+}
+
+.menu-footer li {
+    list-style: none;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.menu-footer a:hover {
+    color: orange;
+
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact-icon img {
+    width: 40px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.footer-home {
+    margin-top: 30px;
+    background-image: url(/images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.footer-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    /* Điều chỉnh màu sắc và độ mờ của overlay */
+    z-index: 1;
+    /* Đảm bảo rằng overlay nằm phía sau các phần tử khác trong footer */
+}
+
+.footer-content {
+    text-align: center;
+    background-color: rgb(39, 35, 35);
+
+}
+
+.footer-content p {
+    padding: 20px 0;
+    color: white;
+}
+
+.icon img {
+    width: 50px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.paragrap {
+    background-color: #f4fcff;
+    padding: 20px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+textarea {
+    padding: 15px 20px;
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.btnType_1 {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+    left: 155px;
+    margin: 30px 0;
+    background-color: #3f9f48;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.btnType_1:hover {
+    background-color: #f7aa05;
+
+}
+
+.formTtin {
+    padding: 10px 60px;
+
+}
+
+
+
+.formTtin {
+    width: 50%;
+}
+
+@media screen and (min-width:280px) {
+
+    .phone-email,
+    .hearder-web,
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .contact-email,
+    .contact-phone {
+        width: 100%;
+    }
+
+    .contact-email p,
+    .contact-phone p,
+    .logo-header {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .logo-header img {
+        width: 50%;
+    }
+
+    .menu li {
+        list-style: none;
+        padding: 5px 16px;
+    }
+
+    .menu ul,
+    .menu a {
+        padding: 0;
+    }
+
+    .formTtin {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .btnType_1 {
+        position: relative;
+        left: 60px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .footer-box>img {
+        width: 50%;
+    }
+
+    .menu-footer ul {
+        padding: 0;
+    }
+
+    .menu-footer a {
+        padding: 10px 11px;
+    }
+
+}
+
+@media screen and (min-width:360px) {
+    .contact-map {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .btnType_1 {
+        position: relative;
+        left: 79px;
+    }
+}
+@media screen and (min-width:412px) {
+    .btnType_1 {
+            position: relative;
+            left: 95px;
+        }
+}
+@media screen and (min-width:768px) {
+    .phone-email ,.box{
+        flex-wrap: nowrap;
+    }
+    .contact-email ,.contact-phone{
+        width: auto;
+    }
+        .contact-email p,
+        .contact-phone p{
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .menu{
+            width: 80%;
+        }
+        .formTtin ,.contact-map{
+            width: 50%;
+        }
+                .footer-box>img {
+                    width: 33%;
+                }
+}
+@media screen and (min-width:820px) {
+    iframe{
+        height: 340px;
+    }
+}
+@media screen and (min-width:1300px) {
+    iframe {
+            height: 350px;
+        }
+                .footer-box>img {
+                    width: 14%;
+                }
+            }

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Xuân Thuận</title>
+    <link rel="icon" href="https://i.pinimg.com/564x/21/a1/57/21a1572cc8729ba9a59390ec66fdd0ea.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1dc1877525.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo3.png" alt="logo" style="width: 140px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home"></i> Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="new.html">
+                        <i class="fas fa-briefcase"></i> Tin tức
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-phone"></i> Liên hệ
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-phone-square"> </i> 0123456789
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-envelope"></i> dulich@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- <div class="header-home">
+        <div class="header">
+            <div class="container-header">
+                <div class="hearder-web">
+                    <div class="logo-header">
+                        <img src="/images/logo3.png" alt="logo">
+                    </div>
+                    <div class="contact-header">
+                        <div class="phone-email">
+                            <div class="contact-phone">
+                                <p><i class="fas fa-phone-square"> </i> 0123456789</p>
+                            </div>
+                            <div class="contact-email">
+                                <p><i class="fas fa-envelope"></i> dulich@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-n">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="new.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var menuNav = document.querySelector('.menu-n');
+            menuNav.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <div class="banner-address">
+        <div class="banner-text">
+            <h1>Các điểm đến </h1>
+            <p><a href="">Trang chủ</a> / các điểm đến</p>
+        </div>
+
+    </div>
+
+    <div class="container-address">
+        <div class="tilte-address">
+            <div class="where">
+                <hr>
+                <span>
+                    Những địa điểm mà bạn không thể bỏ lỡ khi đến Nghệ An
+                </span>
+                <hr>
+            </div>
+
+        </div>
+        <div class="photo-address">
+            <div class="photo"><img src="images/lanchau.jpg" alt="">
+                <p>Đảo Lan Châu </p>
+            </div>
+            <div class="photo"><img src="images/pumat.jpg" alt="">
+                <p>Vườn Quốc Gia Pù-Mát </p>
+            </div>
+            <div class="photo"><img src="images/nhabac.jpg" alt="">
+                <p>Nhà Bác Hồ </p>
+            </div>
+        </div>
+        <div class="photo-address">
+            <div class="photo"><img src="images/langsen.jpg" alt="">
+                <p>Làng sen Quê Bác </p>
+            </div>
+            <div class="photo"><img src="images/huongduong.jpg" alt="">
+                <p>Đồi hoa Hướng Dương </p>
+            </div>
+            <div class="photo"><img src="images/cualo.jpg" alt="">
+                <p>Biển Cửa Lò </p>
+            </div>
+        </div>
+    </div>
+    <div class="tilte-travel">
+        <div class="content-travel">
+            <h2>Tour
+                <span style="color: #1ba0e2;">Du Lịch</span>
+            </h2>
+        </div>
+        <div class="icon-travel">
+            <hr>
+            <i class="far fa-dot-circle"></i>
+            <hr>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 photo2">
+                <img src="images/cualo.jpg" alt="" style="width: 100%;height: auto;">
+                <p>Du lịch biển Cửa Lò </p>
+                <p style="font-weight: 500;color:#1ba0e2">2.690.000vnđ/khách</p>
+                <p><del>3.000.000vnđ</del></p>
+                <p class="mb-0"><i class="fas fa-home"></i> Khởi hành : Thứ 6 hàng tuần </p>
+                <p><i class="fas fa-calendar-alt"></i> Thời gian : 2 Ngày 1 Đêm</p>
+            </div>
+            <div class="col-md-3 col-sm-6 photo2">
+                <img src="images/huongduong.jpg" alt="" style="width: 100%;height: auto;">
+                <p>Du lịch đồi hoa Hướng Dương</p>
+                <p style="font-weight: 500;color:#1ba0e2">1.000.000vnđ/khách</p>
+                <p><del>1.300.000vnđ</del></p>
+                <p class="mb-0"><i class="fas fa-home"></i> Khởi hành : Thứ 2 hàng tuần </p>
+                <p><i class="fas fa-calendar-alt"></i> Thời gian : 1 Ngày</p>
+            </div>
+            <div class="col-md-3 col-sm-6 photo2">
+                <img src="images/nhabac.jpg" alt="" style="width: 100%;height: auto;">
+                <p>Du lịch quê Bác </p>
+                <p style="font-weight: 500;color:#1ba0e2">1.690.000vnđ/khách</p>
+                <p><del>1.400.000vnđ</del></p>
+                <p class="mb-0"><i class="fas fa-home"></i> Khởi hành : Thứ 6 hàng tuần </p>
+                <p><i class="fas fa-calendar-alt"></i> Thời gian : 1 Ngày</p>
+            </div>
+            <div class="col-md-3 col-sm-6 photo2">
+                <img src="images/langsen.jpg" alt="" style="width: 100%;height: auto;">
+                <p>Du lịch làng sen quê Bác </p>
+                <p style="font-weight: 500;color:#1ba0e2">1.599.000vnđ/khách</p>
+                <p><del>1.199.000vnđ</del></p>
+                <p class="mb-0"><i class="fas fa-home"></i> Khởi hành : Thứ 6 hàng tuần </p>
+                <p><i class="fas fa-calendar-alt"></i> Thời gian : 1 Ngày </p>
+            </div>
+        </div>
+    </div>
+    <div class="food-tilte">
+        <div class="text-food">
+            <h2 style="color: #1ba0e2;"> Ẩm thực </h2>
+        </div>
+
+        <div class="line-food">
+            <hr>
+            <i class="far fa-dot-circle"></i>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 photo3">
+                <img src="images/chaoluon.jpg" alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-utensils"></i> Cháo lươn </p>
+                </div>
+            </div>
+            <div class="col-md-4 photo3">
+                <img src="images/muc.jpg" alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-utensils"></i> Mực Nháy nướng </p>
+                </div>
+            </div>
+            <div class="col-md-4 photo3">
+                <img src="images/tuong.jpg " alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-utensils"></i> Tương Nam Đàn </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 photo3">
+                <img src="images/nhut.jpg" alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-utensils"></i> Nhút Thanh Chương </p>
+                </div>
+            </div>
+            <div class="col-md-4 photo3">
+                <img src="images/banhmuot.jpg" alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-utensils"></i> Bánh mướt </p>
+                </div>
+            </div>
+            <div class="col-md-4 photo3">
+                <img src="images/banhda.jpg " alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-utensils"></i> Bánh đa xúc hến </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2 style="color:#1ba0e2"> Sản phẩm làm quà </h2>
+            <div class="col-md-4 photo4">
+                <img src="images/banhgai.jpg" alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-suitcase-rolling"></i> Bánh gai </p>
+                </div>
+            </div>
+            <div class="col-md-4 photo4">
+                <img src="images/cathu.jpg" alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-suitcase-rolling"></i> Cá thu Cửa Lò </p>
+                </div>
+            </div>
+            <div class="col-md-4 photo4">
+                <img src="images/chaoluon.jpg" alt="" style="width: 100%; height: auto;">
+                <div>
+                    <p><i class="fas fa-suitcase-rolling"></i> Cháo lươn </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-home">
+        <div class="footer">
+            <img src="images/logo3.png" alt="">
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="new.html">Địa Điểm </a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.facebook.com/thuan.ta.16102005"><img src="images/facebook.png"
+                        alt=""></a>
+                <a href="https://zalo.me/0359561367"><img src="images/zalo.webp" alt=""></a>
+                <a href="#"><img src="images/what_app.png" alt=""></a>
+                <a href="#"><img src="images/email.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <p style="margin: 0;"> Designed & Developer by XuanThuanTA @ 2024</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

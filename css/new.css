@@ -1,0 +1,362 @@
+body {
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, .45);
+    background-position-y: -70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.hearder-web {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1450px;
+    margin: auto
+}
+
+.phone-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-phone p,
+.contact-email p {
+    margin-right: 30px;
+    color: white;
+}
+
+.contact-phone p:hover,
+.contact-email p:hover,
+.menu a:hover {
+    color: #1ba0e2;
+}
+
+.menu a.active {
+    color: #1ba0e2;
+    border-bottom: 2px solid #22ff31;
+}
+.menu a.active:hover {
+    color: #27fa2e;
+}
+
+.menu-n {
+    background-color: rgba(0, 0, 0, .2);
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Đảm bảo menu luôn hiển thị phía trên */
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.menu {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.carousel {
+    position: relative;
+    top: -145px;
+    /* Điều chỉnh giá trị số này để căn chỉnh vị trí slide dưới header */
+}
+
+.header {
+    position: relative;
+    z-index: 999;
+    /* Đảm bảo phần header nằm trên slide */
+}
+
+.home {
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner img {
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    top: -10px;
+}
+
+.content-homepage {
+    background-image: url(/images/bann.jpg);
+    margin-top: -100px;
+    background-repeat: no-repeat;
+    background-position-y: -230px;
+    background-size: cover;
+}
+
+.home-tilte h2,
+.home-text p {
+    color: black;
+}
+
+.home-tilte h2 {
+    border-bottom: 1px solid white;
+    max-width: 400px;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.footer img {
+    padding-top: 20px;
+}
+
+.menu-footer li {
+    list-style: none;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.menu-footer a:hover {
+    color: orange;
+
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact-icon img {
+    width: 40px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.footer-home {
+    margin-top: 30px;
+    background-image: url(/images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.footer-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+}
+
+.footer-content {
+    text-align: center;
+    background-color: rgb(39, 35, 35);
+
+}
+
+.footer-content p {
+    padding: 20px 0;
+    color: white;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 700px;
+}
+
+@media screen and (min-width:280px) {
+
+    .hearder-web,
+    .phone-email,
+    .home {
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+
+        padding: 10px 8px;
+    }
+
+    .menu ul {
+        padding: 0;
+
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .carousel {
+        position: relative;
+        top: 0px;
+    }
+
+    .carousel-indicators button {
+        visibility: hidden;
+    }
+
+    .home {
+        position: relative;
+        top: 100px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .background-home {
+        padding: 0 10px;
+    }
+
+    .banner img {
+        padding: 0;
+        position: relative;
+        top: 0;
+    }
+
+    .menu-footer ul {
+        padding: 0;
+    }
+
+    .menu-footer a {
+        padding: 0 10px;
+    }
+
+    img {
+        width: 160px;
+    }
+
+    .footer-content {
+        font-size: 14px;
+    }
+} 
+@media screen and (min-width:360px) {
+    .phone-email{
+        flex-wrap: wrap;
+    }
+    .contact-phone ,.contact-email p{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-phone p{
+        padding-top: 20px;
+    }
+    .menu li{
+        padding:10px 20px
+    }
+
+}
+@media screen and (min-width:412px) {
+    .menu li{
+        padding: 10px 30px;
+    }
+}
+@media screen and (min-width:768px) {
+    img{
+        width: 20%;
+    }
+    .phone-email{
+        flex-wrap: nowrap;
+    }
+    .contact-phone p{
+        padding:0;
+    }
+    .menu{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .carousel{
+        position: relative;
+        top:-133px;
+    }
+    .carousel-item img{
+        height: 470px;
+    }
+    .home{
+        position: relative;
+        top: 0;
+        padding: 0;
+    }
+    .footer-content p{
+        font-size: 18px;
+    }
+    .footer-home{
+        margin: 0;
+    }
+    .logo-header img{
+        width: 60%;
+    }
+    .contact-email p ,.contact-phone p{
+        margin-bottom: 0;
+    }
+    
+}
+@media screen and (min-width:820px) {
+    .content-homepage{
+        background-position-y:0 ;
+    }
+    .home{
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+        .carousel-item img {
+            height: 550px;
+        }
+}
+@media screen and (min-width:1280px) {
+    .logo-header img {
+            width: 90%;
+        }
+}
